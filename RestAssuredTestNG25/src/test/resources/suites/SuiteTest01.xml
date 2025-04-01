@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite 1" verbose="1">
+    <test name="Test 1">
+      <packages>
+          <package name="com.anhtester"></package>
+      </packages>
+    </test>
+    <test name="Test by Class and Method">
+        <classes>
+            <class name="com.anhtester.DemoTestNG">
+                <methods>
+                    <include name="testCreateUser" />
+                </methods>
+            </class>
+            <class name="com.anhtester.DemoTestNG02"></class>
+        </classes>
+    </test>
+</suite>

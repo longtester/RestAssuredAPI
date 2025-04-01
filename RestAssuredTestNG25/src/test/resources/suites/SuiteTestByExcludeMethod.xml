@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite by exclude method" verbose="1">
+    <test name="Test by exclude method">
+        <classes>
+            <class name="com.anhtester.DemoTestNG">
+                <methods>
+                    <exclude name="testCreateUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
